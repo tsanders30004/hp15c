@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<script src="jquery.js"></script>
+	<script src="calculator.js"></script>
+	<style>
+		body {
+			font-family: sans-serif;
+			font-size: 2em;
+		}
+		td {
+			text-align: center;
+		}
+		#display {
+			border: 1px solid black;
+			height: 100px;
+			width:  300px;
+			font-size: 2em;
+			text-align: right;
+			border-radius: 10px;
+			background-color: rgb( 176, 176, 138);
+		}
+		button {
+			height: 100px;
+			width:  100px;
+			font-size: 2em;
+			background-color: rgb(180, 180, 180);
+			border-radius: 10px;
+			margin:  5px;
+		}
+		button:focus {
+			box-shadow: 10px 10px 5px #888888;
+		}
+		table {
+			background-color: #dddddd;
+			border-radius: 20px;
+			padding: 10px;
+			background:  linear-gradient(rgb(14, 151, 192), rgb(210,160,43));
+		}
+	</style>
+</head>
+
+<body>
+
+	<table>
+		<tr>
+			<td><a href="http://store.hp.com"><img src="hp15c.png" height="100" width="100"></a></td>
+		</tr>
+		<tr>
+			<td>
+				<button>
+					C
+				</button>
+			</td>
+			<td colspan="3">
+				<input id="display" type="text">
+			</td>
+		</tr>
+		<tr>
+			<td><button class="number">7</button></td>
+			<td><button class="number">8</button></td>
+			<td><button class="number">9</button></td>
+			<td><button class="operator">/</button></td>
+		</tr>
+		<tr>
+		<tr>
+			<td><button class="number">4</button></td>
+			<td><button class="number">5</button></td>
+			<td><button class="number">6</button></td>
+			<td><button class="operator">*</button></td>
+		</tr>
+		</tr>
+		<tr>
+		<tr>
+			<td><button class="number">1</button></td>
+			<td><button class="number">2</button></td>
+			<td><button class="number">3</button></td>
+			<td><button class="operator">-</td>
+		</tr>
+		</tr>
+		<tr>
+		<tr>
+			<td><button class="number">0</button></td>
+			<td><button class="evaluate">=</button></td>
+			<td><button class="operator"> </button></td>
+			<td><button class="operator">+</button> </td>
+		</tr>
+		</tr>
+	</table>
+
+</body>
+</html>
+
+
+
